@@ -10,7 +10,7 @@ body {
 }
 #available_types {
     padding: 1em;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid whitesmoke;
     text-align: center;
 }
 .resultHeader {
@@ -18,7 +18,7 @@ body {
     text-align: right;
 }
 .resultRow {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid whitesmoke;
     padding-bottom: 1em;
     text-align: center;
 }
