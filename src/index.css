@@ -27,6 +27,7 @@ body {
 }
 #currentButtons {
     text-align: left;
+    color: whitesmoke;
 }
 .typeButton {
     margin-left: 10px;
