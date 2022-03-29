@@ -2,9 +2,9 @@ body {
     background-color: #121212;
     color: whitesmoke;
 }
-/* .container {
-    background-color: lightgrey;
-} */
+.container {
+    background-color: #202020;
+}
 #current_types {
     padding: 1em;
 }
@@ -27,39 +27,41 @@ body {
 }
 #currentButtons {
     text-align: left;
-    color: whitesmoke;
 }
 .typeButton {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     width: 6em;
-    border-color: rgb(53, 53, 53);
-    color: white;
+    border-color: whitesmoke;
+    color: whitesmoke;
 }
 .typeList {
     text-align: left;
     padding: .3em;
 }
+#none {
+    color: whitesmoke;
+}
 #normal {
     background-color: grey;
 }
 #fire{
-    background-color: orange;
+    background-color: rgb(207, 136, 5);
 }
 #water{
-    background-color: cornflowerblue;
+    background-color: rgb(73, 107, 170);
 }
 #electric{
     color: rgb(58, 58, 58);
-    background-color:gold;
+    background-color:rgb(197, 168, 0);
 }
 #grass{
     background-color: darkgreen;
 }
 #ice{
     color:rgb(58, 58, 58);
-    background-color: aquamarine;
+    background-color: rgb(93, 190, 158);
 }
 #fighting{
     background-color: maroon;
@@ -71,10 +73,10 @@ body {
     background-color: sienna;
 }
 #flying{
-    background-color: steelblue;
+    background-color: rgb(43, 80, 110);
 }
 #psychic{
-    background-color: violet;
+    background-color: rgb(177, 60, 177);
 }
 #bug{
     background-color: rgb(66, 100, 10);
@@ -95,8 +97,5 @@ body {
     background-color: rgb(124, 124, 124);
 }
 #fairy {
-    background-color: rgb(255, 130, 151);
-}
-#none {
-    color:rgb(53, 53, 53)
+    background-color: rgb(163, 89, 101);
 }
