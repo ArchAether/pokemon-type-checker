@@ -5,6 +5,15 @@ body {
 .container {
     background-color: #202020;
 }
+.offcanvas {
+    background-color: #404040;
+}
+#closecanvas {
+    color: whitesmoke;
+}
+#typeSelectBtn{
+    text-align: right;
+}
 #current_types {
     padding: 1em;
 }
@@ -15,7 +24,7 @@ body {
 }
 .resultHeader {
     padding-top: 1em;
-    text-align: right;
+    text-align: center;
 }
 .resultRow {
     border-bottom: 1px solid whitesmoke;
@@ -23,10 +32,10 @@ body {
     text-align: center;
 }
 #currentHeader {
-    text-align: right;
+    text-align: center;
 }
 #currentButtons {
-    text-align: left;
+    text-align: center;
 }
 .typeButton {
     margin-left: 10px;
@@ -37,7 +46,7 @@ body {
     color: whitesmoke;
 }
 .typeList {
-    text-align: left;
+    text-align: center;
     padding: .3em;
 }
 #none {
