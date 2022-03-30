@@ -229,10 +229,16 @@ class TypeMatchUp extends React.Component {
                         <a className='btn btn-primary' data-bs-toggle='offcanvas' href='#offcanvas' role={"button"}>Types</a>
                     </div>
                 </div>
+                <div id='currentTypesOnPage'>
+                    <h2>Current Types</h2>
+                    <TypeDisplay name={this.state.selected1} onClick={() => this.resetType(0)} />
+                    <TypeDisplay name={this.state.selected2} onClick={() => this.resetType(1)} />
+                </div>
+                <br></br>
                 <div id='weaknessResults'>
                     <div id='weaknessRow' className='resultRow'>
                         <div className='resultHeader'>
-                            <h3>Weak to:</h3>
+                            <h5>Weak to:</h5>
                         </div>
                         <div className='typeList'>
                             <WeaknessDisplay list={this.state.effectivenessList[0]} />
@@ -241,7 +247,7 @@ class TypeMatchUp extends React.Component {
                     </div>
                     <div id='weakness4xRow' className='resultRow'>
                         <div className='resultHeader'>
-                            <h3>Very Weak to:</h3>
+                            <h5>Very Weak to:</h5>
                         </div>
                         <div className='typeList'>
                             <WeaknessDisplay list={this.state.effectivenessList[1]} />
@@ -250,7 +256,7 @@ class TypeMatchUp extends React.Component {
                     </div>
                     <div id='resistanceRow' className='resultRow'>
                         <div className='resultHeader'>
-                            <h3>Resistant to:</h3>
+                            <h5>Resistant to:</h5>
                         </div>
                         <div className='typeList'>
                             <WeaknessDisplay list={this.state.effectivenessList[2]} />
@@ -259,7 +265,7 @@ class TypeMatchUp extends React.Component {
                     </div>
                     <div id='resistanceFourthRow' className='resultRow'>
                         <div className='resultHeader'>
-                            <h3>Very Resistant to:</h3>
+                            <h5>Very Resistant to:</h5>
                         </div>
                         <div className='typeList'>
                             <WeaknessDisplay list={this.state.effectivenessList[3]} />
@@ -267,45 +273,18 @@ class TypeMatchUp extends React.Component {
                     </div>
                     <div id='immuneRow' className='resultRow'>
                         <div className='resultHeader'>
-                            <h3>Immune to:</h3>
+                            <h5>Immune to:</h5>
                         </div>
                         <div className='typeList'>
                             <WeaknessDisplay list={this.state.effectivenessList[4]} />
                         </div>
                     </div>
+                    <br></br>
+                    <p>Click on the Types button to begin.</p>
+                    <br></br>
                 </div>
-                <div id="current_types" className='row'>
-                    <div id='currentHeader'className='col-6'>
-                        <h3>Current Selection:</h3>
-                    </div>
-                    <div id='currentButtons'className='col-6'>
-                        <TypeDisplay name={this.state.selected1} onClick={() => this.resetType(0)} />
-                        <TypeDisplay name={this.state.selected2} onClick={() => this.resetType(1)} />
-                    </div>
-                </div>
-                <div id='available_types' className='row'>
-                    <div id='topRow'>
-                        <TypeButton name="normal" onClick={() => this.changeType("normal")} />
-                        <TypeButton name="fire" onClick={() => this.changeType("fire")} />
-                        <TypeButton name="water" onClick={() => this.changeType("water")} />
-                        <TypeButton name="electric" onClick={() => this.changeType("electric")} />
-                        <TypeButton name="grass" onClick={() => this.changeType("grass")} />
-                        <TypeButton name="ice" onClick={() => this.changeType("ice")} />
-                        <TypeButton name="fighting" onClick={() => this.changeType("fighting")} />
-                        <TypeButton name="poison" onClick={() => this.changeType("poison")} />
-                        <TypeButton name="ground" onClick={() => this.changeType("ground")} />
-                        <TypeButton name="flying" onClick={() => this.changeType("flying")} />
-                        <TypeButton name="psychic" onClick={() => this.changeType("psychic")} />
-                        <TypeButton name="bug" onClick={() => this.changeType("bug")} />
-                        <TypeButton name="rock" onClick={() => this.changeType("rock")} />
-                        <TypeButton name="ghost" onClick={() => this.changeType("ghost")} />
-                        <TypeButton name="dragon" onClick={() => this.changeType("dragon")} />
-                        <TypeButton name="dark" onClick={() => this.changeType("dark")} />
-                        <TypeButton name="steel" onClick={() => this.changeType("steel")} />
-                        <TypeButton name="fairy" onClick={() => this.changeType("fairy")} />
-                    </div>
-                </div>
-                <div className='offcanvas offcanvas-start' tabIndex={'-1'} id='offcanvas' aria-labelledby='offcanvasLabel'>
+                {/* offcanvas */}
+                <div className='offcanvas offcanvas-end' tabIndex={'-1'} id='offcanvas' aria-labelledby='offcanvasLabel'>
                     <div className='offcanvas-header'>
                         <h5 className='offcanvas-title' id='offcanvasLabel'>Type Picker</h5>
                         <button type='button' id='closecanvas' className='btn-close text-reset' data-bs-dismiss="offcanvas" aria-label='Close'></button>
@@ -337,7 +316,11 @@ class TypeMatchUp extends React.Component {
                             <TypeButton name="dark" onClick={() => this.changeType("dark")} />
                             <TypeButton name="steel" onClick={() => this.changeType("steel")} />
                             <TypeButton name="fairy" onClick={() => this.changeType("fairy")} />
-                            <p>Click on the current type to deselect it</p>
+                            <br></br>
+                            <br></br>
+                            <h5>How to use:</h5>
+                            <p>Click on a button above to select up to two types.</p>
+                            <p>Click on the currently selected type to deselect it.</p>
                         </div>
 
                     </div>

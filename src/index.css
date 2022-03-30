@@ -14,6 +14,11 @@ body {
 #typeSelectBtn{
     text-align: right;
 }
+#currentTypesOnPage {
+    padding: 1em;
+    border-bottom: 1px solid whitesmoke;
+    text-align: center;
+}
 #current_types {
     padding: 1em;
 }
